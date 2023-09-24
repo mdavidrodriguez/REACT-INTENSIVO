@@ -1,0 +1,22 @@
+.kanban{
+    display: flex;
+    align-items: flex-start;
+    &__section{
+        width: 400px;
+        background-color: #383838;
+        padding: 10px;
+        border-radius: 10px;
+        & ~ &{
+            margin-left: 10px;
+        }
+        &__section{
+            font-size: 1.2rem;
+            font-weight: 10px 0 20px;
+        }
+        &__content {
+            & > * ~ * {
+                margin-top: 10px;
+            }
+        }
+    }
+}
